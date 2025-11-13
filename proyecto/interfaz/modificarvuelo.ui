@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ModificarVuelo</class>
+ <widget class="QDialog" name="ModificarVuelo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>240</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Modificar vuelo</string>
+  </property>
+  <widget class="QLabel" name="labelTitulo">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>360</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Modifique el peso de la conexión:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelOrigen">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>150</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Origen:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelDestino">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>60</y>
+     <width>150</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Destino:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPeso">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nuevo peso:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPeso">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>95</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QDialogButtonBox" name="button_Aceptar">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>150</y>
+     <width>221</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>button_Aceptar</sender>
+   <signal>accepted()</signal>
+   <receiver>ModificarVuelo</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>110</x>
+     <y>200</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>90</x>
+     <y>220</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_Aceptar</sender>
+   <signal>rejected()</signal>
+   <receiver>ModificarVuelo</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>210</x>
+     <y>200</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>180</x>
+     <y>220</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

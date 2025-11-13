@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EliminarVuelo</class>
+ <widget class="QDialog" name="EliminarVuelo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>234</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Eliminar conexion</string>
+  </property>
+  <widget class="QDialogButtonBox" name="button_Eliminar">
+   <property name="geometry">
+    <rect>
+     <x>-60</x>
+     <y>150</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>40</y>
+     <width>281</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cual vuelo desea eliminar:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_Origen">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>80</y>
+     <width>141</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_Destino">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>80</y>
+     <width>141</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="statusLabel">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>120</y>
+     <width>231</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>button_Eliminar</sender>
+   <signal>accepted()</signal>
+   <receiver>EliminarVuelo</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_Eliminar</sender>
+   <signal>rejected()</signal>
+   <receiver>EliminarVuelo</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

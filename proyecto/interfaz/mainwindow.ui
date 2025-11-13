@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>777</width>
+    <height>580</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>PointingHandCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Reserva de vuelos</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="image">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>1280</width>
+      <height>853</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_calcularRutaOptima">
+    <property name="geometry">
+     <rect>
+      <x>653</x>
+      <y>30</y>
+      <width>608</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Calcular ruta óptima</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ciudad de origen:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>10</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ciudad destino:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_2">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>40</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_AgregarCiudad">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Agregar ciudad</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_AgregarConexion">
+    <property name="geometry">
+     <rect>
+      <x>386</x>
+      <y>90</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Agregar vuelo</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_EliminarCiudad">
+    <property name="geometry">
+     <rect>
+      <x>208</x>
+      <y>90</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Eliminar ciudad</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_EliminarVuelo">
+    <property name="geometry">
+     <rect>
+      <x>565</x>
+      <y>90</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Eliminar vuelo</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_ModificarVuelo">
+    <property name="geometry">
+     <rect>
+      <x>743</x>
+      <y>90</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Modificar vuelo</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_CargarGrafo">
+    <property name="geometry">
+     <rect>
+      <x>922</x>
+      <y>90</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cargar Grafo</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_GuardarGrafo">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>90</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Guardar Grafo</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>777</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
